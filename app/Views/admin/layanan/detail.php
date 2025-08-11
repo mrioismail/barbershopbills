@@ -54,7 +54,7 @@
                         </li>
                         <li>
                             Detail Layanan:
-                            <strong class="text-dark d-block"><?= esc($layanan['detail_layanan']) ?></strong>
+                            <strong class="text-dark d-block text-break overflow-auto mw-100" style="max-height: 150px;"><?= esc($layanan['detail_layanan']) ?></strong>
                         </li>
                     </ul>
                 </div>

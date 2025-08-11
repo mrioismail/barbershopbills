@@ -192,7 +192,7 @@ class Booking extends BaseController
 
 
         // admin WA-nya
-        $noAdmin = '6289616640360';
+        $noAdmin = '6282155038131';
         // Buat isi pesan ke wa
         $pesan = "*Booking Bills Barbershop*\n";
         $pesan .= "Nama: " . $booking['nama_customer'] . "\n";
