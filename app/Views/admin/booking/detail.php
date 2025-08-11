@@ -136,9 +136,9 @@
                         <?php if ($booking['status'] === 'booked'): ?>
                             <span class="inline-block bg-yellow-400 text-yellow-900 px-2 py-1 rounded text-xs font-semibold">Booked</span>
                         <?php elseif ($booking['status'] === 'batal'): ?>
-                            <span class="inline-block bg-red-600 text-white px-2 py-1 rounded text-xs font-semibold">Batal</span>
+                            <span class="inline-block bg-red-600 text-dark px-2 py-1 rounded text-xs font-semibold">Batal</span>
                         <?php elseif ($booking['status'] === 'selesai'): ?>
-                            <span class="inline-block bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">Selesai</span>
+                            <span class="inline-block bg-green-600 text-dark px-2 py-1 rounded text-xs font-semibold">Selesai</span>
                         <?php else: ?>
                             <span class="inline-block bg-gray-400 text-white px-2 py-1 rounded text-xs font-semibold">Status tidak diketahui</span>
                         <?php endif; ?>

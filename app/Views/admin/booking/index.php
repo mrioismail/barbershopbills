@@ -66,24 +66,37 @@
                             </td>
                             <td class="text-center">
                                 <!-- Tombol Detail -->
-                                <a href="<?= base_url('admin/booking/detail/' . $book['id']) ?>" class="badge bg-info-800 text-white text-[12px] mb-1 d-block">Detail</a>
+                                <a href="<?= base_url('admin/booking/detail/' . $book['id']) ?>"
+                                    class="badge bg-info-800 text-white text-[12px] mb-1 d-block">
+                                    Detail
+                                </a>
 
-                                <!-- Hilangkan tombol selesai jika status sudah selesai -->
-                                <?php if ($book['status'] !== 'selesai'): ?>
-                                    <form action="<?= base_url('admin/booking/update/' . $book['id']) ?>" method="post" class="d-inline"
+                                <!-- Tombol Selesai: muncul jika status bukan selesai & bukan batal -->
+                                <?php if ($book['status'] !== 'selesai' && $book['status'] !== 'batal'): ?>
+                                    <form action="<?= base_url('admin/booking/update/' . $book['id']) ?>"
+                                        method="post"
+                                        class="d-inline">
                                         <?= csrf_field() ?>
                                         <input type="hidden" name="status" value="selesai">
-                                        <button type="submit" class="btn-selesai badge bg-success-600 text-white border-0 text-[11px] mb-1">Selesai</button>
+                                        <button type="submit"
+                                            class="btn-selesai badge bg-success-600 text-white border-0 text-[11px] mb-1">
+                                            Selesai
+                                        </button>
                                     </form>
                                 <?php endif; ?>
 
-                                <!-- Hilangkan tombol batal jika status sudah batal -->
-                                <?php if ($book['status'] !== 'batal'): ?>
-                                    <form action="<?= base_url('admin/booking/update/' . $book['id']) ?>" method="post" class="d-inline"
+                                <!-- Tombol Batal: muncul jika status bukan batal & bukan selesai -->
+                                <?php if ($book['status'] !== 'batal' && $book['status'] !== 'selesai'): ?>
+                                    <form action="<?= base_url('admin/booking/update/' . $book['id']) ?>"
+                                        method="post"
+                                        class="d-inline"
                                         onsubmit="return confirm('Yakin ingin membatalkan booking ini?');">
                                         <?= csrf_field() ?>
                                         <input type="hidden" name="status" value="batal">
-                                        <button type="submit" class="btn-batal badge bg-danger-600 text-white border-0 text-[11px]">Batal</button>
+                                        <button type="submit"
+                                            class="btn-batal badge bg-danger-600 text-white border-0 text-[11px]">
+                                            Batal
+                                        </button>
                                     </form>
                                 <?php endif; ?>
                             </td>
