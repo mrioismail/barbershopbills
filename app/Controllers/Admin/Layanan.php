@@ -174,9 +174,9 @@ class Layanan extends BaseController
             ],
             'detail_layanan' => [
                 'label' => 'Detail Layanan',
-                'rules' => 'permit_empty|max_length[500]',
+                'rules' => 'permit_empty|max_length[20]',
                 'errors' => [
-                    'max_length' => 'Detail layanan maksimal 500 karakter.',
+                    'max_length' => 'Detail layanan maksimal 20 karakter.',
                 ]
             ],
         ];

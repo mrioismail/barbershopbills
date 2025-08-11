@@ -7,9 +7,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-12">
-                <h1 class="text-white mb-lg-3 mb-4"><strong>Bills <em>Babershop</em></strong></h1>
+                <h2 class="text-white mb-lg-3 mb-4"><strong>Bills <em>Babershop</em></strong></h2>
                 <p class="text-black">
-                <p class="text-white fs-5">Siap jadi versi terganteng dari dirimu? Booking sekarang!</p>
+                <p class="text-white" style="font-size: 0.9rem;">Siap jadi versi terganteng dari dirimu? Booking sekarang!</p>
                 </p>
                 <br>
                 <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-1 mb-2" href="#section_4">Harga</a>
@@ -33,7 +33,9 @@
             <div class="col-lg-12 col-12 mx-auto">
                 <h2 class="mb-4">Penata Rambut Terbaik</h2>
                 <div class="border-bottom pb-3 mb-5">
-                    <p class="fs-5">Di Bills Barbershop, kami percaya bahwa potongan rambut bukan cuma soal gaya—tapi tentang rasa percaya diri. Berawal dari semangat untuk menghadirkan pelayanan barbershop yang nyaman, rapi, dan profesional, kami hadir untuk bantu kamu tampil maksimal setiap hari. Dikerjakan oleh barber berpengalaman, dengan suasana yang santai dan bersih, kamu tinggal duduk, santai, dan siap jadi ganteng!</p>
+                    <p style="font-size: 0.9rem;">
+                        Di Bills Barbershop, kami percaya bahwa potongan rambut bukan cuma soal gaya—tapi tentang rasa percaya diri. Berawal dari semangat untuk menghadirkan pelayanan barbershop yang nyaman, rapi, dan profesional, kami hadir untuk bantu kamu tampil maksimal setiap hari. Dikerjakan oleh barber berpengalaman, dengan suasana yang santai dan bersih, kamu tinggal duduk, santai, dan siap jadi ganteng!
+                    </p>
                 </div>
             </div>
             <h6 class="text-center mb-2 text-dark">Tim Bills Barbershop</h6>
