@@ -10,6 +10,8 @@
 
     <title>Bills Barbershop</title>
 
+    <link rel="icon" href="<?= base_url('customer/images/logo.jpg') ?>" type="image/x-icon" />
+
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
