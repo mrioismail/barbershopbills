@@ -223,28 +223,38 @@ class Layanan extends BaseController
 
     public function delete($id)
     {
+        // Ambil data layanan berdasarkan ID
         $layanan = $this->layananModel->find($id);
 
-        // cek layanan yg ada di tabel booking
+        // Cek apakah layanan sudah dipakai di tabel booking
         $cek_layanan = $this->bookingModel
             ->where('layanan_id', $id)
             ->first();
+
         if ($cek_layanan) {
             session()->setFlashdata('errors', 'Gagal Hapus! Nama layanan sudah di booking.');
             return redirect()->to('admin/layanan/detail/' . $id)->withInput();
         }
 
         if ($layanan) {
-            // hapus foto layanan jika ada
-            if ($layanan['foto_layanan']) {
-                unlink('admin/assets/images/uploads/' . $layanan['foto_layanan']);
+            // Hapus foto layanan jika ada
+            if (!empty($layanan['foto_layanan'])) {
+                // Gunakan path absolut supaya tidak bermasalah di hosting
+                $path = FCPATH . 'admin/assets/images/uploads/' . $layanan['foto_layanan'];
+
+                // Cek dulu apakah file benar-benar ada
+                if (file_exists($path)) {
+                    unlink($path);
+                }
             }
-            // hapus data layanan
+
+            // Hapus data layanan dari database
             $this->layananModel->delete($id);
             session()->setFlashdata('pesan', 'Layanan berhasil dihapus!');
         } else {
             session()->setFlashdata('pesan', 'Layanan tidak ditemukan!');
         }
+
         return redirect()->to('admin/layanan');
     }
 }
