@@ -9,6 +9,7 @@
       <h1 class="text-3xl font-semibold text-gray-800">Selamat Datang, <?= session('nama') ?? 'Admin' ?>!</h1>
       <p class="text-gray-500">Dashboard Bill’s Barbershop</p>
     </div>
+    <!-- akhir header okeee -->
 
     <!-- Card Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
