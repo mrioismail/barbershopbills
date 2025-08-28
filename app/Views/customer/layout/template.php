@@ -11,7 +11,6 @@
     <title>Bills Barbershop</title>
 
     <link rel="icon" href="<?= base_url('customer/images/logo.jpg') ?>" type="image/x-icon" />
-    <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>" type="image/x-icon">
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

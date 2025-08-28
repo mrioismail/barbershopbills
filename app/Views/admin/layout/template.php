@@ -18,7 +18,6 @@
 
     <!-- [Favicon] icon -->
     <link rel="icon" href="<?= base_url('admin/assets/images/logo.jpg') ?>" type="image/x-icon" />
-    <link rel="shortcut icon" href="<?= base_url('favicon.ico') ?>" type="image/x-icon">
 
     <!-- [Font] Family -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
